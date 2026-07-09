@@ -35,7 +35,6 @@ TEAM_ARRANGEMENTS = {
     "Checker board": 1,
     "Alternated columns": 2,
     "Random" : 3,
-    "Head to Head alternated borders" : 4,
 }
 
 class PdGrid(mesa.Model,cooperativeExtension):
@@ -94,8 +93,6 @@ class PdGrid(mesa.Model,cooperativeExtension):
 
         self.activation_order = activation_order
         self.grid = OrthogonalMooreGrid((size, size), torus=True, random=self.random)
-        self.n_teams = 2
-        self.teams = [0,1]
         self.teamA = 0
         self.teamB = 1
         self.teamA_score = 0

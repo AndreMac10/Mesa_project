@@ -95,8 +95,6 @@ class PdGrid1(mesa.Model,cooperativeExtension):
 
         self.activation_order = activation_order
         self.grid = OrthogonalMooreGrid((size, size), torus=True, random=self.random)
-        self.n_teams = 2
-        self.teams = [0,1]
         self.teamA = 0
         self.teamB = 1
         self.teamA_score = 0

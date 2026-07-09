@@ -221,13 +221,6 @@ class PDAgent(CellAgent):
         half_size = N_ROWS_COLUMNS / 2 
         self.team = "A" if self.cell.position[0] < half_size else "B"
     
-    #da fare
-    # def head_to_head_alternated_borders(self):
-    #     half_size = N_ROWS_COLUMNS / 2
-    #     if self.cell.position[0] == 0 or self.cell.position[0] == half_size:
-    #         self.checker_arrangement()
-    #     else:
-    #         self.team = "A" if self.cell.position[0] < half_size else "B"
     
     def alternated_columns_arrangement(self):
         self.team = "A" if self.cell.position[0] % 2 != 1 else "B"

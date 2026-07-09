@@ -93,7 +93,7 @@ def CustomLayoutWrapper(model):
 
 
     # Render the input controls right below the grid canvas
-    with solara.Card("Manual Agent Team Editor", style="width: 400px; margin: 20px auto;"):
+    with solara.Card("Manual Agent Info", style="width: 400px; margin: 20px auto;"):
         
         # Text input field linked directly to our reactive variable
         solara.InputText(

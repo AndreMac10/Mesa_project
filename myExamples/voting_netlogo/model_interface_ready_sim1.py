@@ -109,8 +109,7 @@ class VotingGrid1(mesa.Model,cooperativeExtension):
                         if(neighbor==self): continue
                         if neighbor.team == agent.team:
                             count_teammates += 1
-                    if count_teammates > 9: pass
-                    else: agents_IDs.append(agent.unique_id)
+                        agents_IDs.append(agent.unique_id)
         return agents_IDs
     
     def decrement_stabilization_time(self):
@@ -156,7 +155,7 @@ class VotingGrid1(mesa.Model,cooperativeExtension):
         self.agents[agentID - 1].change_vote()
 
     def knockout_IDs(self):
-        #They consider at least one example for each neighbourhood type
+        #All players of the winning team
         agents_IDs = self.__choose_agents()
         return agents_IDs
         
