@@ -17,7 +17,7 @@ if project_root not in sys.path:
 
 # 2. IMPORT ASSOLUTI (Risolve l'errore del punto iniziale)
 from myExamples.boid_flockers.agents import Boid
-from Mesa_analysis.cooperativeExtension import cooperativeExtension
+from ABG_Simulator.cooperativeExtension import cooperativeExtension
 
 # Get the directory where the script is located
 script_dir = os.path.dirname(os.path.abspath(__file__))
